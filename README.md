@@ -67,6 +67,7 @@ This image represents a real, working (but imperfect) integration of multiple su
 
 
 (Jan 10, 2026): 
+![8-bit Computer Progress – Labeled](./IMG_5161.jpeg)
 
 ### Clock Module
 - Manual pulse and astable clock implemented
