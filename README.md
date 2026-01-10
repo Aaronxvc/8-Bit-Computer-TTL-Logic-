@@ -75,8 +75,8 @@ This image represents a real, working (but imperfect) integration of multiple su
 - Clock behavior verified visually via LED indicators
 
 ### Registers
-- **Register A** (left side)
-- **Register B** (right side)
+- **Register A** (Center)
+- **Register B** (Upper left)
 - Registers are implemented as **two 4-bit halves**
 - Output Enable (OE) behavior tested and debugged to avoid bus contention
 - Registers exhibit realistic behavior including:
