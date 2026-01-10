@@ -51,3 +51,80 @@ This project focuses on *physical computation*: how abstract logic becomes real 
 ## Notes
 This project was completed as a self-directed learning exercise to develop intuition for
 digital systems, hardware debugging, and the realities of physical computation.
+
+---
+
+## Current Progress Snapshot
+
+Below is a snapshot of the system as it exists **at this stage of the build**.  
+This image represents a real, working (but imperfect) integration of multiple subsystems.
+
+
+
+---
+
+## What Is Implemented So Far: 
+
+
+(Jan 10, 2026): 
+
+### Clock Module
+- Manual pulse and astable clock implemented
+- Shared clock line distributed to registers
+- Clock behavior verified visually via LED indicators
+
+### Registers
+- **Register A** (left side)
+- **Register B** (right side)
+- Registers are implemented as **two 4-bit halves**
+- Output Enable (OE) behavior tested and debugged to avoid bus contention
+- Registers exhibit realistic behavior including:
+  - undefined startup states
+  - sensitivity to enable lines
+  - need for proper grounding of unused inputs
+
+### Output Register (Testing)
+- Output implemented as **two 4 bit registers**
+- Used strictly for observing system behavior during early integration
+- Current observed output example:
+
+
+### Bus Architecture
+- Shared data bus using tri-state logic
+- Multiple registers tested on the same bus
+- Learned firsthand how improper OE control causes contention and instability
+
+---
+
+## What This Stage Demonstrates
+
+- Integration of multiple subsystems (clock + registers + bus)
+- Real world hardware debugging:
+- floating inputs
+- enable line conflicts
+- inconsistent power-up states
+- The physical reality that:
+- computation does not start in a “clean” state
+- systems can function imperfectly and still be valid
+
+---
+
+## What Is *Not* Implemented Yet
+
+- ALU (currently being built next)
+- Control logic / instruction sequencing
+- Program counter and instruction decoding
+- Memory and full instruction execution
+
+This stage exists specifically to ensure **signal flow, timing, and register behavior** are understood before moving forward.
+
+---
+
+## Status
+
+- System is **partially functional**
+- Focus is on learning and understanding, not polish
+- Design intentionally left visible and modular for iteration
+
+This snapshot serves as a reference point for future expansion (ALU, control logic, VGA output, etc.).
+
