@@ -12,8 +12,8 @@ This project focuses on *physical computation*: how abstract logic becomes real 
 - Clock module (manual + astable)
 - Registers with a shared bus
 - Tri-state bus architecture
-- ALU (basic arithmetic and logic operations)
-- Output / display logic
+- ALU (basic arithmetic and logic operations) (In Progress 🤗)
+- Output / display logic (In Progress 🤗)
 
 ---
 
