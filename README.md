@@ -77,6 +77,7 @@ This image represents a real, working (but imperfect) integration of multiple su
 ### Registers
 - **Register A** (Center)
 - **Register B** (Upper left)
+- **ALU Output Register** (Far right breadboard) 
 - Registers are implemented as **two 4-bit halves**
 - Output Enable (OE) behavior tested and debugged to avoid bus contention
 - Registers exhibit realistic behavior including:
