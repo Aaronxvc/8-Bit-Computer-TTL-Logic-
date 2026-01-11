@@ -17,7 +17,7 @@ This project focuses on *physical computation*: how abstract logic becomes real 
 
 ---
 
-## What I Learned
+## What I've Learned So Far
 - Power integrity often matters more than schematics
 - Floating inputs lead to undefined and unstable behavior
 - Registers power up in random states
