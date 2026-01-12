@@ -49,7 +49,7 @@ This project focuses on *physical computation*: how abstract logic becomes real 
 ---
 
 ## Notes
-This project was completed as a self-directed learning exercise to develop intuition for
+This project is currently being worked on as a self directed learning exercise to develop intuition for
 digital systems, hardware debugging, and the realities of physical computation.
 
 ---
