@@ -130,3 +130,7 @@ This stage exists specifically to ensure **signal flow, timing, and register beh
 
 This snapshot serves as a reference point for future expansion (ALU, control logic, VGA output, etc.).
 
+
+(Jan 12,2026) -
+
+![8-bit Computer Progress – Labeled](./NextStepsForALU.md)
