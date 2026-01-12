@@ -133,4 +133,4 @@ This snapshot serves as a reference point for future expansion (ALU, control log
 
 (Jan 12,2026) -
 ![8-bit Computer Progress – Labeled](./IMG_5174.jpeg)
-![8-bit Computer Progress – Labeled](./NextStepsForALU.md)
+##Click here ~~> ![8-bit Computer Progress – Labeled](./NextStepsForALU.md)
