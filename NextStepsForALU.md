@@ -1,5 +1,7 @@
 # ALU Integration – Pause / Return Notes
 
+![8-bit Computer Progress – Labeled](./IMG_5172.jpeg)
+![8-bit Computer Progress – Labeled](./IMG_5173.jpeg)
 ## Current State
 - Clock module complete and stable
 - Registers:
