@@ -1,4 +1,5 @@
 # 8-Bit TTL Computer — Exploring Determinism, Timing, and Physical Computation
+Status: Ongoing — intentionally incomplete
 
 ## Overview
 Built a breadboard based 8-bit computer using TTL logic, following a reference design.  
