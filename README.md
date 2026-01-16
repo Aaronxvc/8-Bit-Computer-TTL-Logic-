@@ -1,4 +1,4 @@
-# Discrete 8-Bit Computer (TTL Logic)
+# 8-Bit TTL Computer — Exploring Determinism, Timing, and Physical Computation
 
 ## Overview
 Built a breadboard based 8-bit computer using TTL logic, following a reference design.  
