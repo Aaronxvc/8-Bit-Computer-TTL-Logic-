@@ -130,17 +130,17 @@ This stage exists specifically to ensure **signal flow, timing, and register beh
 
 This snapshot serves as a reference point for future expansion (ALU, control logic, VGA output, etc.).
 
-
+---
 
 
 
 (Jan 12, 2026):
 ![8-bit Computer Progress – Labeled](./IMG_5174.jpeg)
-###Click here ~~> ![8-bit Computer Progress – Labeled](./NextStepsForALU.md)
+### Click here ~~> ![8-bit Computer Progress – Labeled](./NextStepsForALU.md)
 
-
+---
 (Jan 15, 2026):
-###Observations on Startup State, Metastability, and Bias
+### Observations on Startup State, Metastability, and Bias
 
 Current system configuration:
 - 555 based clock module
