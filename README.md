@@ -1,12 +1,27 @@
 # Discrete 8-Bit Computer (TTL Logic)
 
 ## Overview
-Built a breadboard-based 8-bit computer using TTL logic, following a reference design.  
+Built a breadboard based 8-bit computer using TTL logic, following a reference design.  
 The goal was not originality, but to understand computation at the **signal, timing, and power** level through hands on implementation and debugging.
 
 This project focuses on *physical computation*: how abstract logic becomes real behavior once voltage, timing, and noise are involved.
 
+## Motivation
+
+Modern digital systems rely on enforced determinism: clean clocks, strict initialization,
+wide noise margins, and carefully managed timing.
+
+This project pauses before those constraints are fully imposed in order to observe:
+- how state emerges during power up
+- how timing and propagation delay influence outcomes
+- how registers settle into biased but repeatable states
+- where abstraction diverges from physical behavior
+
+These observations are documented as part of understanding computation not just as logic,
+but as a physical process.
+
 ---
+
 
 ## What I Built
 - Clock module (manual + astable)
@@ -48,33 +63,19 @@ This project focuses on *physical computation*: how abstract logic becomes real 
 
 ---
 
-## Notes
-This project is currently being worked on as a self directed learning exercise to develop intuition for
-digital systems, hardware debugging, and the realities of physical computation.
 
----
-
-## Current Progress Snapshot
-
-Below is a snapshot of the system as it exists **at this stage of the build**.  
-This image represents a real, working (but imperfect) integration of multiple subsystems.
-
-
-
----
-
-## What Is Implemented So Far: 
+### Development Log
 
 
 (Jan 10, 2026): 
 ![8-bit Computer Progress – Labeled](./IMG_5161.jpeg)
 
-### Clock Module
+## Clock Module
 - Manual pulse and astable clock implemented
 - Shared clock line distributed to registers
 - Clock behavior verified visually via LED indicators
 
-### Registers
+## Registers
 - **Register A** (Center)
 - **Register B** (Upper left)
 - **ALU Output Register** (Far right breadboard) 
@@ -85,13 +86,13 @@ This image represents a real, working (but imperfect) integration of multiple su
   - sensitivity to enable lines
   - need for proper grounding of unused inputs
 
-### Output Register (Testing)
+## Output Register (Testing)
 - Output implemented as **two 4 bit registers**
 - Used strictly for observing system behavior during early integration
 - Current observed output example:
 
 
-### Bus Architecture
+## Bus Architecture
 - Shared data bus using tri-state logic
 - Multiple registers tested on the same bus
 - Learned firsthand how improper OE control causes contention and instability
@@ -111,36 +112,14 @@ This image represents a real, working (but imperfect) integration of multiple su
 
 ---
 
-## What Is *Not* Implemented Yet
-
-- ALU (currently being built next)
-- Control logic / instruction sequencing
-- Program counter and instruction decoding
-- Memory and full instruction execution
-
-This stage exists specifically to ensure **signal flow, timing, and register behavior** are understood before moving forward.
-
----
-
-## Status
-
-- System is **partially functional**
-- Focus is on learning and understanding, not polish
-- Design intentionally left visible and modular for iteration
-
-This snapshot serves as a reference point for future expansion (ALU, control logic, VGA output, etc.).
-
----
-
-
 
 (Jan 12, 2026):
 ![8-bit Computer Progress – Labeled](./IMG_5174.jpeg)
-### Click here ~~> ![8-bit Computer Progress – Labeled](./NextStepsForALU.md)
+## Click here ~~> ![8-bit Computer Progress – Labeled](./NextStepsForALU.md)
 
 ---
 (Jan 15, 2026):
-### Observations on Startup State, Metastability, and Bias
+## Observations on Startup State, Metastability, and Bias
 
 Current system configuration:
 - 555 based clock module
@@ -148,7 +127,7 @@ Current system configuration:
 - Partially implemented ALU
 - No forced reset or initialization logic
 
-#### Observations
+## Observations
 - On power up, registers do not initialize to a fixed state.
 - LED outputs exhibit run to run variation when 5V is applied.
 - Some bit patterns appear more frequently than others.
@@ -161,7 +140,7 @@ These effects are consistent with:
 - metastability
 - physical negotiation of state rather than enforced determinism
 
-#### Interpretation
+## Interpretation
 Rather than treating this behavior strictly as a bug to be eliminated,
 it is being documented as **unreliable determinism** — a regime where
 digital logic begins to expose its physical substrate.
@@ -171,7 +150,7 @@ This region of operation is notable because:
 - probabilistic and stochastic computation models intentionally operate
   near this boundary instead of eliminating it
 
-#### Next Direction (Exploratory)
+## Next Direction (Exploratory)
 - Observe and tally startup state frequencies for individual bits
 - Change one physical condition at a time (clock speed, power up order, load)
 - Document how distributions shift under different conditions
