@@ -134,6 +134,48 @@ This snapshot serves as a reference point for future expansion (ALU, control log
 
 
 
-(Jan 12,2026):
+(Jan 12, 2026):
 ![8-bit Computer Progress – Labeled](./IMG_5174.jpeg)
-##Click here ~~> ![8-bit Computer Progress – Labeled](./NextStepsForALU.md)
+###Click here ~~> ![8-bit Computer Progress – Labeled](./NextStepsForALU.md)
+
+
+(Jan 15, 2026):
+###Observations on Startup State, Metastability, and Bias
+
+Current system configuration:
+- 555 based clock module
+- Two working registers
+- Partially implemented ALU
+- No forced reset or initialization logic
+
+#### Observations
+- On power up, registers do not initialize to a fixed state.
+- LED outputs exhibit run to run variation when 5V is applied.
+- Some bit patterns appear more frequently than others.
+- Register states occasionally match output without explicit control.
+- Behavior is sensitive to power up timing and clock enable order.
+
+These effects are consistent with:
+- propagation delay
+- race conditions
+- metastability
+- physical negotiation of state rather than enforced determinism
+
+#### Interpretation
+Rather than treating this behavior strictly as a bug to be eliminated,
+it is being documented as **unreliable determinism** — a regime where
+digital logic begins to expose its physical substrate.
+
+This region of operation is notable because:
+- deterministic computation requires active suppression of these effects
+- probabilistic and stochastic computation models intentionally operate
+  near this boundary instead of eliminating it
+
+#### Next Direction (Exploratory)
+- Observe and tally startup state frequencies for individual bits
+- Change one physical condition at a time (clock speed, power up order, load)
+- Document how distributions shift under different conditions
+
+This work does not claim a probabilistic computer yet, but documents
+the system operating in a region where **biased outcomes and metastability**
+are observable and repeatable.
