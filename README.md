@@ -159,3 +159,9 @@ This region of operation is notable because:
 This work does not claim a probabilistic computer yet, but documents
 the system operating in a region where **biased outcomes and metastability**
 are observable and repeatable.
+
+---
+
+(Jan 17, 2025):
+
+Click Here --> 
