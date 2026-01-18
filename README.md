@@ -166,7 +166,7 @@ are observable and repeatable.
 
 Experiment E001 — Startup Bias Baseline
 
-## Click Here --> 
+#### Click Here --> 
 ![8-bit Computer Progress – Labeled](./E001_README.md)
 
-
+---
