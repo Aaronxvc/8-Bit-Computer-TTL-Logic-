@@ -164,4 +164,9 @@ are observable and repeatable.
 
 (Jan 17, 2025):
 
-Click Here --> 
+Experiment E001 — Startup Bias Baseline
+
+## Click Here --> 
+![8-bit Computer Progress – Labeled](./E001_README.md)
+
+
